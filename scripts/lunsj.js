@@ -47,7 +47,7 @@ const getUkemeny = (sted) => {
 
 const getVarsel = (robot, rom) => (
   new CronJob({
-    cronTime: '00 30 10 * * 1-5',
+    cronTime: '00 00 11 * * 1-5',
     onTick: () => {
       const dag = new Date().getDay() - 1;
       const ukedag = ukedager[dag];

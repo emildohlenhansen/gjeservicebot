@@ -10,51 +10,51 @@ const dagsbilder = [
     'https://media.giphy.com/media/Q7kfqzaYuAwSI/giphy.gif',
     'https://media.giphy.com/media/26BRynKeJEweP1r4Q/giphy.gif',
     'https://media.giphy.com/media/5epqQGCG4Nr6E/giphy.gif',
-    'https://media.giphy.com/media/8ORG71gPI3GU/giphy.gif',
+    'https://media.giphy.com/media/8ORG71gPI3GU/giphy.gif'
   ],
   [
     'https://media.giphy.com/media/l2JJLQSMaYe9eVEJ2/giphy.gif',
     'https://media.giphy.com/media/xiAqCzbB3eZvG/giphy.gif',
     'https://66.media.tumblr.com/75fcbedf5286c1f0725f13819f2637d4/tumblr_n40m34Vjt11ql198go1_500.gif',
-    'https://storage.googleapis.com/imgfave/image_cache/14246922685277_animate.gif',
+    'https://storage.googleapis.com/imgfave/image_cache/14246922685277_animate.gif'
   ],
   [
     'https://media.giphy.com/media/3oGRFBdaLd2H6nK0oM/giphy.gif',
     'https://media.giphy.com/media/CsR56PJlHELUA/giphy.gif',
     'https://media.giphy.com/media/3o7qE1K2hRrqsRjane/giphy.gif',
-    'https://media.giphy.com/media/rwL730SvRjTwc/giphy.gif',
+    'https://media.giphy.com/media/rwL730SvRjTwc/giphy.gif'
   ],
   [
     'https://media.giphy.com/media/LAuZzXWT5n7K8/giphy.gif',
     'https://i.imgflip.com/k7u3b.jpg',
     'https://media2.giphy.com/media/pFwRzOLfuGHok/200.gif#0',
-    'https://media.giphy.com/media/l2JJLQSMaYe9eVEJ2/giphy.gif',
+    'https://media.giphy.com/media/l2JJLQSMaYe9eVEJ2/giphy.gif'
   ],
   [
     'https://media.giphy.com/media/ogxOm2syETTj2/giphy.gif',
     'https://media.giphy.com/media/WoaluZhDpz3zy/giphy.gif',
     'http://i2.kym-cdn.com/photos/images/facebook/000/117/021/enhanced-buzz-28895-1301694293-0.jpg',
-    'http://i1.kym-cdn.com/photos/images/original/000/117/009/soon.jpg',
+    'http://i1.kym-cdn.com/photos/images/original/000/117/009/soon.jpg'
   ],
   [
     'https://media.giphy.com/media/26vUsARImRG7qT6ww/giphy.gif',
     'https://media.giphy.com/media/26BRIL53texMuRZra/giphy.gif',
     'https://media.giphy.com/media/d2ZfzmOhBzYm92FO/giphy.gif',
     'https://media.giphy.com/media/l0HlS8qchQ80zf94I/giphy.gif',
-    'http://media3.giphy.com/media/ZdFxoPhIS4glG/giphy.gif',
+    'http://media3.giphy.com/media/ZdFxoPhIS4glG/giphy.gif'
   ],
   [
     'https://media.giphy.com/media/oeLMCy3Fbl8Os/giphy.gif',
     'https://i.imgflip.com/oox2k.jpg',
     'http://img.memecdn.com/it-amp-039-s-saturday_o_2044879.jpg',
-    'http://s2.quickmeme.com/img/54/548743857b51de6224c5632c25800a9d8b1a1cb22693431ef78d80aedcf9d1e8.jpg',
-  ],
+    'http://s2.quickmeme.com/img/54/548743857b51de6224c5632c25800a9d8b1a1cb22693431ef78d80aedcf9d1e8.jpg'
+  ]
 ];
 
 const noenPrefixes = [
   'Din tur i dag',
   'Gidder du',
-  'Kom igjen',
+  'Kom igjen'
 ];
 
 module.exports = (robot) => {

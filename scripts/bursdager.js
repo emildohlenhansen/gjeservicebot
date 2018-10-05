@@ -16,14 +16,13 @@ const getBursdagsliste = () => {
 
 const aktiverBursdager = (robot) => {
   new CronJob({
-    cronTime: '00 15 13 * * 1-5',
+    cronTime: '00 25 13 * * 1-5',
     onTick: () => {
+      const bursdagsListe = bursdager.bursdager;
       const rom = bursdager.rom;
-      const bursdager = bursdager.bursdager;
-
-      for(let index in bursdager){
-        const bursdagsbarn = bursdager[index][0];
-        const bursdagsdato = bursdager[index][1];
+      for(let index in bursdagsListe){
+        const bursdagsbarn = bursdagsListe[index][0];
+        const bursdagsdato = bursdagsListe[index][1];
 
         if(moment(bursdagsdato,"DDMM").isSame(moment(), 'day')){
           robot.messageRoom(rom, `Hipp Hipp hurra for @${bursdagsbarn} :tada::tada:  Håper du får en knirkefri dag!`);
@@ -39,6 +38,6 @@ module.exports = (robot) => {
   aktiverBursdager(robot);
   robot.respond(/(bursdagsliste|bursdager)$/i, (res) => {
     const bursdagsliste = getBursdagsliste();
-    res.send(`${robot.room} ${bursdagsliste}`);
+    res.send(`${bursdagsliste}`);
   });
 };

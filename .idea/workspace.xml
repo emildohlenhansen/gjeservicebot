@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="547eb169-0e19-47dd-aac2-4011aad0b01b" name="Default" comment="update bursdager">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/bursdager.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/tull.js" afterPath="$PROJECT_DIR$/scripts/tull.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/bursdager.js" afterPath="$PROJECT_DIR$/scripts/bursdager.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/lunsj.js" afterPath="$PROJECT_DIR$/scripts/lunsj.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/bursdager.js" afterPath="$PROJECT_DIR$/static/bursdager.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,13 +17,11 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="bursdager.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/bursdager.js">
+        <entry file="file://$PROJECT_DIR$/static/bursdager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="2" column="49" lean-forward="false" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="124">
+              <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,8 +58,8 @@
         <option value="$PROJECT_DIR$/external-scripts.json" />
         <option value="$PROJECT_DIR$/scripts/tull.js" />
         <option value="$PROJECT_DIR$/scripts/lunsj.js" />
-        <option value="$PROJECT_DIR$/static/bursdager.js" />
         <option value="$PROJECT_DIR$/scripts/bursdager.js" />
+        <option value="$PROJECT_DIR$/static/bursdager.js" />
       </list>
     </option>
   </component>
@@ -260,8 +258,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="npm.lint" />
-        <item index="1" class="java.lang.String" itemvalue="npm.start" />
+        <item index="0" class="java.lang.String" itemvalue="npm.start" />
+        <item index="1" class="java.lang.String" itemvalue="npm.lint" />
       </list>
     </recent_temporary>
   </component>
@@ -279,7 +277,7 @@
       <option name="presentableId" value="Default" />
       <updated>1538030203770</updated>
       <workItem from="1538030205110" duration="11732000" />
-      <workItem from="1538122899389" duration="2287000" />
+      <workItem from="1538122899389" duration="7088000" />
     </task>
     <task id="LOCAL-00001" summary="legg til lunsjmenyer">
       <created>1538036067723</created>
@@ -365,11 +363,39 @@
       <option name="project" value="LOCAL" />
       <updated>1538124251362</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="update bursdager">
+      <created>1538130788180</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1538130788180</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update bursdager">
+      <created>1538672323534</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1538672323534</updated>
+    </task>
+    <task id="LOCAL-00015" summary="update bursdager">
+      <created>1538672603774</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1538672603774</updated>
+    </task>
+    <task id="LOCAL-00016" summary="update bursdager">
+      <created>1538728872344</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1538728872345</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14019000" />
+    <option name="totallyTimeSpent" value="18820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -382,13 +408,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5117647" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32872656" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32971373" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5093781" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872656" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.4882353" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.49062192" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -417,7 +443,8 @@
     <MESSAGE value="update dependency" />
     <MESSAGE value="tull" />
     <MESSAGE value="update lunsj" />
-    <option name="LAST_COMMIT_MESSAGE" value="update lunsj" />
+    <MESSAGE value="update bursdager" />
+    <option name="LAST_COMMIT_MESSAGE" value="update bursdager" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -467,6 +494,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="155">
           <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -482,13 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
           <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/diagnostikk.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -529,65 +550,90 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/lunsj.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="2" />
+        <state relative-caret-position="93">
+          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="11" />
           <folding>
-            <marker date="1538036036000" expanded="true" signature="17:652" ph="{...}" />
-            <marker date="1538036036000" expanded="true" signature="28:387" ph="{&quot;mandag&quot;: &quot;Kyllingwok, Panert hokifilet,  Aspargessuppe&quot;...}" />
-            <marker date="1538036036000" expanded="true" signature="402:620" ph="{&quot;mandag&quot;: &quot;Kjøttkaker med ertestuing, Gulasjsuppe&quot;...}" />
-            <marker date="1538036036000" expanded="true" signature="629:650" ph="[...]" />
+            <marker date="1538672376000" expanded="true" signature="17:635" ph="{...}" />
+            <marker date="1538672376000" expanded="true" signature="28:43" ph="{&quot;mandag&quot;: &quot;Kyllingwok, Panert hokifilet,  Aspargessuppe&quot;...}" />
+            <marker date="1538672376000" expanded="true" signature="28:366" ph="{&quot;mandag&quot;: &quot;Grillet krydderpølse, Torsk med chorizo og ostetopping, Tom Yum Gai suppe&quot;...}" />
+            <marker date="1538672376000" expanded="true" signature="381:603" ph="{&quot;mandag&quot;: &quot;Fiskekaker med råkost, Grønnsaksuppe&quot;...}" />
+            <marker date="1538672376000" expanded="true" signature="598:603" ph="{&quot;mandag&quot;: &quot;Kjøttkaker med ertestuing, Gulasjsuppe&quot;...}" />
+            <marker date="1538672376000" expanded="true" signature="612:633" ph="[...]" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/diagnostikk.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="35" column="0" lean-forward="true" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <marker date="1538053340000" expanded="true" signature="0:130" ph="//..." />
+            <marker date="1538053340000" expanded="true" signature="160:1784" ph="{...}" />
+            <marker date="1538053340000" expanded="true" signature="211:248" ph="{...}" />
+            <marker date="1538053340000" expanded="true" signature="299:1081" ph="{...}" />
+            <marker date="1538053340000" expanded="true" signature="446:716" ph="{...}" />
+            <marker date="1538053340000" expanded="true" signature="862:1075" ph="{...}" />
+            <marker date="1538053340000" expanded="true" signature="1126:1254" ph="{...}" />
+            <marker date="1538053340000" expanded="true" signature="1305:1780" ph="{...}" />
+            <marker date="1538053340000" expanded="true" signature="1505:1739" ph="{...}" />
+            <marker date="1538053340000" expanded="true" signature="1643:1733" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/lunsj.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="916">
-          <caret line="43" column="26" lean-forward="false" selection-start-line="43" selection-start-column="22" selection-end-line="43" selection-end-column="26" />
-          <folding>
-            <marker date="1538124196000" expanded="true" signature="0:2" ph="//..." />
-            <marker date="1538124196000" expanded="true" signature="0:179" ph="//..." />
-            <marker date="1538124196000" expanded="true" signature="310:374" ph="[...]" />
-            <marker date="1538124196000" expanded="true" signature="412:506" ph="{...}" />
-            <marker date="1538124196000" expanded="true" signature="627:764" ph="{...}" />
-            <marker date="1538124196000" expanded="true" signature="951:1049" ph="{...}" />
-            <marker date="1538124196000" expanded="true" signature="1081:1170" ph="{...}" />
-            <marker date="1538124196000" expanded="true" signature="1223:1638" ph="{&quot;cronTime&quot;: '00 00 11 * * 1-5'...}" />
-            <marker date="1538124196000" expanded="true" signature="1277:1588" ph="{...}" />
-            <marker date="1538124196000" expanded="true" signature="1682:1730" ph="{...}" />
-            <marker date="1538124196000" expanded="true" signature="1767:1983" ph="{...}" />
-            <marker date="1538124196000" expanded="true" signature="1939:1979" ph="{...}" />
-            <marker date="1538124196000" expanded="true" signature="2014:3206" ph="{...}" />
-            <marker date="1538124196000" expanded="true" signature="2092:2268" ph="{...}" />
-            <marker date="1538124196000" expanded="true" signature="2387:3049" ph="{...}" />
-            <marker date="1538124196000" expanded="true" signature="2621:2959" ph="{...}" />
-            <marker date="1538124196000" expanded="true" signature="2711:2765" ph="{...}" />
-            <marker date="1538124196000" expanded="true" signature="2771:2953" ph="{...}" />
-            <marker date="1538124196000" expanded="true" signature="2965:3045" ph="{...}" />
-            <marker date="1538124196000" expanded="true" signature="3106:3202" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bursdager.js">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
-          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="40" />
           <folding>
-            <marker date="1538130756000" expanded="true" signature="17:197" ph="{...}" />
-            <marker date="1538130756000" expanded="true" signature="32:165" ph="{&quot;Martin Sangolt&quot;: &quot;27/05/1992&quot;...}" />
-            <marker date="1538130756000" expanded="true" signature="174:195" ph="[...]" />
+            <marker date="1538737253000" expanded="true" signature="0:2" ph="//..." />
+            <marker date="1538737253000" expanded="true" signature="0:179" ph="//..." />
+            <marker date="1538737253000" expanded="true" signature="309:373" ph="[...]" />
+            <marker date="1538737253000" expanded="true" signature="411:505" ph="{...}" />
+            <marker date="1538737253000" expanded="true" signature="626:763" ph="{...}" />
+            <marker date="1538737253000" expanded="true" signature="950:1048" ph="{...}" />
+            <marker date="1538737253000" expanded="true" signature="1080:1169" ph="{...}" />
+            <marker date="1538737253000" expanded="true" signature="1222:1637" ph="{&quot;cronTime&quot;: '00 30 10 * * 1-5'...}" />
+            <marker date="1538737253000" expanded="true" signature="1276:1587" ph="{...}" />
+            <marker date="1538737253000" expanded="true" signature="1681:1729" ph="{...}" />
+            <marker date="1538737253000" expanded="true" signature="1766:1982" ph="{...}" />
+            <marker date="1538737253000" expanded="true" signature="1938:1978" ph="{...}" />
+            <marker date="1538737253000" expanded="true" signature="2013:3205" ph="{...}" />
+            <marker date="1538737253000" expanded="true" signature="2091:2267" ph="{...}" />
+            <marker date="1538737253000" expanded="true" signature="2386:3048" ph="{...}" />
+            <marker date="1538737253000" expanded="true" signature="2620:2958" ph="{...}" />
+            <marker date="1538737253000" expanded="true" signature="2710:2764" ph="{...}" />
+            <marker date="1538737253000" expanded="true" signature="2770:2952" ph="{...}" />
+            <marker date="1538737253000" expanded="true" signature="2964:3044" ph="{...}" />
+            <marker date="1538737253000" expanded="true" signature="3105:3201" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/bursdager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="2" column="49" lean-forward="false" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+        <state relative-caret-position="620">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <marker date="1538737811000" expanded="true" signature="0:65" ph="//..." />
+            <marker date="1538737811000" expanded="true" signature="310:482" ph="{...}" />
+            <marker date="1538737811000" expanded="true" signature="521:1068" ph="{...}" />
+            <marker date="1538737811000" expanded="true" signature="537:1065" ph="{&quot;cronTime&quot;: '00 15 13 * * 1-5'...}" />
+            <marker date="1538737811000" expanded="true" signature="591:1015" ph="{...}" />
+            <marker date="1538737811000" expanded="true" signature="705:1009" ph="{...}" />
+            <marker date="1538737811000" expanded="true" signature="871:1001" ph="{...}" />
+            <marker date="1538737811000" expanded="true" signature="1099:1287" ph="{...}" />
+            <marker date="1538737811000" expanded="true" signature="1184:1283" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/bursdager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="4" column="26" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>

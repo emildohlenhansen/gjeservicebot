@@ -4,6 +4,7 @@ module.exports = {
     "mfeiring": "29/04/1990",
     "sigurdfalken": "20/04/1989",
     "emildh": "27/01/1992",
+    "Bent": "01/09/1986"
   },
   rom: [
     'CD1HHGMC0'

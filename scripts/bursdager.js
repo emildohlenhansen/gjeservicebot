@@ -14,6 +14,6 @@ const getBursdagsliste = () => {
 module.exports = (robot) => {
   robot.respond(/(bursdagsliste|bursdager)$/i, (res) => {
     const bursdagsliste = getBursdagsliste();
-    res.send(`${robot.room.users} ${bursdagsliste}`);
+    res.send(`${robot.room} ${bursdagsliste}`);
   });
 };

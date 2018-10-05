@@ -58,6 +58,6 @@ module.exports = (robot) => {
 
   robot.respond(/(bursdageridag)$/i, (res) => {
     const dagensBursdager = getDagensBursdager();
-    res.send('CD1HHGMC0',`${JSON.stringify(brain.data.users)} \n ${dagensBursdager}`);
+    res.message('CD1HHGMC0',dagensBursdager);
   });
 };

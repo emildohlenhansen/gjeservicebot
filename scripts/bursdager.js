@@ -22,7 +22,7 @@ const getDagensBursdager = () => {
     const bursdagsbarn = bursdagsListe[index][0];
     const bursdagsdato = bursdagsListe[index][1];
     if(moment(bursdagsdato,"DDMM").isSame(moment(), 'day')){
-      bursdagsString += `Hipp Hipp hurra for @Emil Døhlen Hansen :tada::tada:  Håper du får en knirkefri dag! \n`;
+      bursdagsString += `Hipp Hipp hurra for #{Emil Døhlen Hansen} :tada::tada:  Håper du får en knirkefri dag! \n`;
     }
   }
 

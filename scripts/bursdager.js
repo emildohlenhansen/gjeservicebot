@@ -22,7 +22,7 @@ const getDagensBursdager = () => {
     const bursdagsbarn = bursdagsListe[index][0];
     const bursdagsdato = bursdagsListe[index][1];
     if(moment(bursdagsdato,"DDMM").isSame(moment(), 'day')){
-      bursdagsString += `Hipp Hipp hurra for <${bursdagsbarn}> :tada::tada:  Håper du får en knirkefri dag! \n`;
+      bursdagsString += `Hipp Hipp hurra for @Emil Døhlen Hansen :tada::tada:  Håper du får en knirkefri dag! \n`;
     }
   }
 
@@ -58,6 +58,6 @@ module.exports = (robot) => {
 
   robot.respond(/(bursdageridag)$/i, (res) => {
     const dagensBursdager = getDagensBursdager();
-    robot.messageRoom('CD1HHGMC0',`${dagensBursdager}`);
+    res.send('CD1HHGMC0',`${dagensBursdager}`);
   });
 };

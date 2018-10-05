@@ -17,10 +17,10 @@ const getBursdagsliste = () => {
 const getDagensBursdager = () => {
   const bursdagsListe = bursdager.bursdager;
   const rom = bursdager.rom;
+  let bursdagsString = "";
   for(let index in bursdagsListe){
     const bursdagsbarn = bursdagsListe[index][0];
     const bursdagsdato = bursdagsListe[index][1];
-    let bursdagsString = "";
     if(moment(bursdagsdato,"DDMM").isSame(moment(), 'day')){
       bursdagsString += `Hipp Hipp hurra for @${bursdagsbarn} :tada::tada:  Håper du får en knirkefri dag! \n`;
     }

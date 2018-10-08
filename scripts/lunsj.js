@@ -3,7 +3,6 @@
 // lunsj dag - lunsj meny for gitt dag
 // lunsj dag sted - lunsj for gitt dag på gitt sted
 // lunsj sted - lunsj for sted hele uken
-
 const menyer = require('../static/lunsj');
 
 const CronJob = require('cron').CronJob;

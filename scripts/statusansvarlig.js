@@ -1,5 +1,3 @@
-// Commands
-// bursdager eller bursdagsliste - vis alle bursdager
 const moment = require('moment');
 const CronJob = require('cron').CronJob;
 

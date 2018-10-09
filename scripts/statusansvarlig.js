@@ -20,7 +20,7 @@ aktiverAnsvarligliste = () => {
         const uke = bursdagsListe[index][1];
 
         if(moment.week(uke).isSame(moment(), 'week')){
-          robot.messageRoom(rom, `Denne uka er <@${hvem}> ansvarlig for overvåkning av våre tjenster. <@${forrigeHvem}> holder oppsummering om forrige uke på mandagsmøtet.`);
+          robot.messageRoom(rom, `:bell: Denne uka er <@${hvem}> ansvarlig for overvåkning av våre tjenster :tv:. <@${forrigeHvem}> holder oppsummering om forrige uke på mandagsmøtet :ok_hand:.`);
         }
       }
     },

@@ -15,9 +15,9 @@ aktiverAnsvarligliste = () => {
       const ansvarligliste = statusansvarlige.ansvarlige;
       const rom = statusansvarlige.rom;
       for(let index in ansvarligliste){
-        const forrigeHvem = bursdagsListe[index - 1][0];
-        const hvem = bursdagsListe[index][0];
-        const uke = bursdagsListe[index][1];
+        const forrigeHvem = ansvarligliste[index - 1][0];
+        const hvem = ansvarligliste[index][0];
+        const uke = ansvarligliste[index][1];
 
         if(moment.week(uke).isSame(moment(), 'week')){
           robot.messageRoom(rom, `:bell: Denne uka er <@${hvem}> ansvarlig for overvåkning av våre tjenster :tv:. <@${forrigeHvem}> holder oppsummering om forrige uke på mandagsmøtet :ok_hand:.`);

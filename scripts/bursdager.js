@@ -6,14 +6,14 @@ const CronJob = require('cron').CronJob;
 const bursdager = require('../static/bursdager');
 
 const getAlleBursdager = () => {
-  const bursdagsListe = bursdager.bursdager.map(([id, dato]) => `\n\t <@${id}> ${moment(dato, "DDMM").format("Do MMMM")}`);
+  const bursdagsListe = bursdager.bursdager.map(([id, dato]) => `\n\t <@${id}> ${moment(dato, 'DDMM').format('Do MMMM')}`);
   return `Bursdagsoversikt Service Team :cake::tada: : ${bursdagsListe}`;
 };
 
 const getDagensBursdager = () => (
   bursdager.bursdager
-    .filter(([id, dato]) => moment(dato, "DDMM").isSame(moment(), 'day'))
-    .map(([id, dato]) => `Hipp Hipp hurra for <@${id}> :tada::cake:  Håper du får en knirkefri dag!`)
+    .filter(([id, dato]) => moment(dato, 'DDMM').isSame(moment(), 'day'))
+    .map(([id, dato]) => `psssst! <@${id}> har bursdag idag :tada::cake:`)
 );
 
 const aktiverBursdager = (robot) => {
@@ -21,20 +21,21 @@ const aktiverBursdager = (robot) => {
     cronTime: '00 00 9 * * 1-5',
     onTick: () => {
       const bursdagsListe = getDagensBursdager();
-      const rom = bursdager.rom;
-      if(bursdagsListe.length > 0){
-        robot.messageRoom(rom, bursdagsListe);
+
+      if (bursdagsListe.length > 0) {
+        bursdager.bursdager.filter(([id, dato]) => !moment(dato, 'DDMM').isSame(moment(), 'day'))
+          .forEach(([id, dato]) => robot.messageRoom(id, `${bursdagsListe}`));
       }
     },
     start: true,
     timeZone: 'Europe/Oslo'
-  })
+  });
 };
 
 module.exports = (robot) => {
   aktiverBursdager(robot);
   robot.respond(/(bursdagsliste|bursdager)$/i, (res) => {
     const dagensBursdager = getAlleBursdager();
-    robot.messageRoom('UB9CWUCS1', `${dagensBursdager} ${res.envelope.user.name} ${res.envelope.user.id}`);
+    robot.messageRoom(res.envelope.user.id, `${dagensBursdager}`);
   });
 };

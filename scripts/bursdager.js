@@ -36,5 +36,6 @@ module.exports = (robot) => {
   robot.respond(/(bursdagsliste|bursdager)$/i, (res) => {
     const dagensBursdager = getAlleBursdager();
     robot.messageRoom('UB9CWUCS1', `${dagensBursdager}`);
+    robot.messageRoom('UC30379K6', `${dagensBursdager}`)
   });
 };

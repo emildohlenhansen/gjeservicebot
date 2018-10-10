@@ -10,34 +10,20 @@ const getAlleBursdager = () => {
   return `Bursdagsoversikt Service Team :cake::tada: : ${bursdagsListe}`;
 };
 
-const getDagensBursdager = () => {
-  const bursdagsListe = bursdager.bursdager;
-  const rom = bursdager.rom;
-  let bursdagsString = "";
-  for (let index in bursdagsListe) {
-    const bursdagsbarn = bursdagsListe[index][0];
-    const bursdagsdato = bursdagsListe[index][1];
-    if (moment(bursdagsdato, "DDMM").isSame(moment(), 'day')) {
-      bursdagsString += `Hipp Hipp hurra for <@${bursdagsbarn}> :tada::tada:  Håper du får en knirkefri dag! \n`;
-    }
-  }
-
-  return bursdagsString;
-};
+const getDagensBursdager = () => (
+  bursdager.bursdager
+    .filter(([id, dato]) => moment(dato, "DDMM").isSame(moment(), 'day'))
+    .map(([id, dato]) => `Hipp Hipp hurra for <@${id}> :tada::cake:  Håper du får en knirkefri dag!`)
+);
 
 const aktiverBursdager = (robot) => {
   new CronJob({
-    cronTime: '00 25 13 * * 1-5',
+    cronTime: '00 00 9 * * 1-5',
     onTick: () => {
-      const bursdagsListe = bursdager.bursdager;
+      const bursdagsListe = getDagensBursdager();
       const rom = bursdager.rom;
-      for (let index in bursdagsListe) {
-        const bursdagsbarn = bursdagsListe[index][0];
-        const bursdagsdato = bursdagsListe[index][1];
-
-        if (moment(bursdagsdato, "DDMM").isSame(moment(), 'day')) {
-          robot.messageRoom('CD1HHGMC0', `Hipp Hipp hurra for <${bursdagsbarn}> :tada::tada:  Håper du får en knirkefri dag!`);
-        }
+      if(bursdagsListe.length > 0){
+        robot.messageRoom(rom, bursdagsListe);
       }
     },
     start: true,
@@ -49,6 +35,6 @@ module.exports = (robot) => {
   aktiverBursdager(robot);
   robot.respond(/(bursdagsliste|bursdager)$/i, (res) => {
     const dagensBursdager = getAlleBursdager();
-    robot.messageRoom('CD1HHGMC0', `${dagensBursdager}`);
+    robot.messageRoom('UB9CWUCS1', `${dagensBursdager}`);
   });
 };

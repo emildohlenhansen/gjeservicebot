@@ -5,24 +5,20 @@ const CronJob = require('cron').CronJob;
 
 const bursdager = require('../static/bursdager');
 
-const capitalize = string => (
-  string.charAt(0).toUpperCase() + string.slice(1)
-);
-
-const getBursdagsliste = () => {
-  const bursdagsliste = Object.keys(bursdager.bursdager).map(key => `\n\t${capitalize(key)}: ${bursdager.bursdager[key]}`);
-  return `Alle bursdager: ${bursdagsliste}`;
+const getAlleBursdager = () => {
+  const bursdagsListe = bursdager.bursdager.map(([id, dato]) => `\n\t <@${id}> ${moment(dato, "DDMM").format("Do MMMM")}`);
+  return `Bursdagsoversikt Service Team :cake::tada: : ${bursdagsListe}`;
 };
 
 const getDagensBursdager = () => {
   const bursdagsListe = bursdager.bursdager;
   const rom = bursdager.rom;
   let bursdagsString = "";
-  for(let index in bursdagsListe){
+  for (let index in bursdagsListe) {
     const bursdagsbarn = bursdagsListe[index][0];
     const bursdagsdato = bursdagsListe[index][1];
-    if(moment(bursdagsdato,"DDMM").isSame(moment(), 'day')){
-      bursdagsString += `Hipp Hipp hurra for <#@${bursdagsbarn}> :tada::tada:  Håper du får en knirkefri dag! \n`;
+    if (moment(bursdagsdato, "DDMM").isSame(moment(), 'day')) {
+      bursdagsString += `Hipp Hipp hurra for <@${bursdagsbarn}> :tada::tada:  Håper du får en knirkefri dag! \n`;
     }
   }
 
@@ -35,11 +31,11 @@ const aktiverBursdager = (robot) => {
     onTick: () => {
       const bursdagsListe = bursdager.bursdager;
       const rom = bursdager.rom;
-      for(let index in bursdagsListe){
+      for (let index in bursdagsListe) {
         const bursdagsbarn = bursdagsListe[index][0];
         const bursdagsdato = bursdagsListe[index][1];
 
-        if(moment(bursdagsdato,"DDMM").isSame(moment(), 'day')){
+        if (moment(bursdagsdato, "DDMM").isSame(moment(), 'day')) {
           robot.messageRoom('CD1HHGMC0', `Hipp Hipp hurra for <${bursdagsbarn}> :tada::tada:  Håper du får en knirkefri dag!`);
         }
       }
@@ -52,12 +48,7 @@ const aktiverBursdager = (robot) => {
 module.exports = (robot) => {
   aktiverBursdager(robot);
   robot.respond(/(bursdagsliste|bursdager)$/i, (res) => {
-    const bursdagsliste = getBursdagsliste();
-    res.send(`${bursdagsliste}`);
-  });
-
-  robot.respond(/(tester)$/i, (res) => {
-    const dagensBursdager = getDagensBursdager();
-    robot.messageRoom('CD1HHGMC0',`${dagensBursdager}`);
+    const dagensBursdager = getAlleBursdager();
+    robot.messageRoom('CD1HHGMC0', `${dagensBursdager}`);
   });
 };

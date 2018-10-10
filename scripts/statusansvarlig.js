@@ -4,7 +4,7 @@ const CronJob = require('cron').CronJob;
 const statusansvarlige = require('../static/statusansvarlig');
 
 const getAnsvarliglisteliste = () => {
-  const ansvarligliste = statusansvarlige.ansvarlige.map(([id, uke]) => `\n\t${uke}: <@${id}>`);
+  const ansvarligliste = statusansvarlige.ansvarlige.map(([id, uke]) => `\n\t Uke: ${uke}: <@${id}>`);
   return `Ansvarlige for overvåkning av våre tjenester: ${ansvarligliste}`;
 };
 

@@ -1,16 +1,16 @@
 module.exports = {
   huset: {
-    mandag: "Lammegryte, Damet torsk med sitronsaus, Fiskesuppe",
-    tirsdag: "Grønnsakslasagne, Røkt torskeburger på grovbrød, Løksuppe",
-    onsdag: "Lapskaus med flatbrød, Dampet laks, Selleri og eplesuppe",
-    torsdag: "Komle, Pasta med skalldyr, Meksikansk tomatsuppe",
-    fredag: "Tortilla, Dagens suppe"
+    mandag: "BBQ kyllingklubber, Seibiff med løk, Blomkål og brokkolisuppe",
+    tirsdag: "Pasta penne arrabiata, Torsk med smørsaus, Fiskesuppe",
+    onsdag: "Flesk og duppe, Paella, Tomatsuppe",
+    torsdag: "Fårikål, Laksewok, Tom Yum Gai suppe",
+    fredag: "Ølmarinert svinekjake, Dagens suppe"
   },
   galleriet: {
-    mandag: "Kjøttboller og pasta, Løksuppe",
-    tirsdag: "Thai fisk, Gulasjsuppe",
-    onsdag: "Kylling Chana Masala, Søtpotetsuppe",
-    torsdag: "Lammestek, Blomkålsuppe",
+    mandag: "Vegemite med tzatziki, Grønnsakssuppe",
+    tirsdag: "Kylling med couscous, Oksehalesuppe",
+    onsdag: "Laks med agurksalat, Kyllingsuppe",
+    torsdag: "Bolognese, Soppsupe",
     fredag: "Pølsefest"
   },
   rom: [

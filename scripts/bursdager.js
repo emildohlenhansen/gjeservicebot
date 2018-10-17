@@ -18,7 +18,7 @@ const getDagensBursdager = () => (
 
 const aktiverBursdager = (robot) => {
   new CronJob({
-    cronTime: '00 00 9 * * 1-7',
+    cronTime: '00 00 9 * * 0-6',
     onTick: () => {
       const bursdagsListe = getDagensBursdager();
 

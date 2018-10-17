@@ -12,19 +12,19 @@ const getAlleBursdager = () => {
 
 const getDagensBursdager = () => (
   bursdager.bursdager
-    .filter(([id, dato]) => moment(dato, 'DDMM').isSame(moment(), 'day'))
-    .map(([id, dato]) => `psssst! <@${id}> har bursdag idag :tada::cake:`)
+    .filter(([, dato]) => moment(dato, 'DDMM').isSame(moment(), 'day'))
+    .map(([id]) => `psssst! <@${id}> har bursdag idag :tada::cake:`)
 );
 
 const aktiverBursdager = (robot) => {
   new CronJob({
-    cronTime: '00 00 9 * * 1-5',
+    cronTime: '00 00 9 * * 1-7',
     onTick: () => {
       const bursdagsListe = getDagensBursdager();
 
       if (bursdagsListe.length > 0) {
-        bursdager.bursdager.filter(([id, dato]) => !moment(dato, 'DDMM').isSame(moment(), 'day'))
-          .forEach(([id, dato]) => robot.messageRoom(id, `${bursdagsListe}`));
+        bursdager.bursdager.filter(([, dato]) => !moment(dato, 'DDMM').isSame(moment(), 'day'))
+          .forEach(([id]) => robot.messageRoom(id, `${bursdagsListe}`));
       }
     },
     start: true,

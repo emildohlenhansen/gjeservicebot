@@ -27,7 +27,7 @@ aktiverAnsvarligliste = () => {
     cronTime: '00 00 10 * * 1',
     onTick: () => {
       const ansvarligliste = statusansvarlige.ansvarlige;
-      const rom = statusansvarlige.rom;
+      const rom = statusansvarlige.rom[0];
       for (let index in ansvarligliste) {
         const forrigeHvem = index > 0 ? ansvarligliste[index - 1][0] : "Ingen";
         const hvem = ansvarligliste[index][0];
@@ -48,10 +48,9 @@ module.exports = (robot) => {
   robot.respond(/(statusansvarligoversikt)$/i, (res) => {
     const ansvarliglisteOversikt = getAnsvarliglistelisteOversikt();
     res.send(`${ansvarliglisteOversikt}`);
-
-    robot.respond(/(statusansvarlig)$/i, (res) => {
+  });
+  robot.respond(/(statusansvarlig)$/i, (res) => {
       const ansvarligliste = getAnsvarliglisteliste();
       res.send(`${ansvarligliste}`);
-    });
   });
 };

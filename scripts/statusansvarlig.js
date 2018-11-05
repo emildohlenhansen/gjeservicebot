@@ -24,7 +24,7 @@ const getAnsvarliglisteliste = () => {
 
 aktiverAnsvarligliste = (robot) => {
   new CronJob({
-    cronTime: '00 05 10 * * 1',
+    cronTime: '00 10 10 * * 1',
     onTick: () => {
       const ansvarligliste = statusansvarlige.ansvarlige;
       const rom = statusansvarlige.rom[0];

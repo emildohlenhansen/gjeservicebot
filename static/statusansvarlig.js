@@ -5,8 +5,8 @@ module.exports = {
     ["UA4U8PN74", "42"], // Jon Magnus
     ["UA4MGB1RA", "43"], // Eivind
     ["UC30379K6", "44"], // Bent
-    ["UB9CWUCS1", "45"], // Emil
-    ["UA52Y6GE9", "46"], // Fredrik
+    ["UA52Y6GE9", "45"], // Fredrik
+    ["UB9CWUCS1", "46"], // Emil
     ["UA5QWQ9BQ", "47"], // Håkon
     ["UBECSNGTA", "48"], // Mira
     ["UA536664V", "49"] // Pål

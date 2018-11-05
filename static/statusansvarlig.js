@@ -12,6 +12,6 @@ module.exports = {
     ["UA536664V", "49"] // Pål
   ],
   rom: [
-    'CA68MMWDV'
+    'CA22ZT7TN'
   ]
 };

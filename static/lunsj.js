@@ -4,7 +4,7 @@ module.exports = {
     tirsdag: "Boboli, Klippfiskgryte, Soppsuppe",
     onsdag: "Brennsnut, Paella, Minestronesuppe",
     torsdag: "Wok med svinekjøtt, stekt laks, Eple og sellerisuppe",
-    fredag: "Kylling Shawarma, Fiskesuppe
+    fredag: "Kylling Shawarma, Fiskesuppe"
   },
   galleriet: {
     mandag: "Brokkoli og gulrotmedaljonger, Grønnsakssuppe",

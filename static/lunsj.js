@@ -4,7 +4,7 @@ module.exports = {
     tirsdag: "Lasagne med salat, Fiskesuppe",
     onsdag: "Aloo Gobi, Dampet laks, Gulrot og potetsuppe",
     torsdag: "Egg og bacon med stekte poteter og tomatbønner, Pasta med skalldyr, Blomkålsuppe",
-    fredag: "Biff Stroganoff, PS: Kantinen stenger kl.12 pga. Hustfesten!
+    fredag: "Biff Stroganoff, PS: Kantinen stenger kl.12 pga. Hustfesten!"
   },
   galleriet: {
     mandag: "Pasta Primavera, Grønnsakssuppe",

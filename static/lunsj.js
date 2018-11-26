@@ -1,10 +1,10 @@
 module.exports = {
   huset: {
-    mandag: "Kyllinggryte, Sprøbakt rødspette, Tomatsuppe",
-    tirsdag: "Lasagne med salat, Fiskesuppe",
-    onsdag: "Aloo Gobi, Dampet laks, Gulrot og potetsuppe",
-    torsdag: "Egg og bacon med stekte poteter og tomatbønner, Pasta med skalldyr, Blomkålsuppe",
-    fredag: "Biff Stroganoff, PS: Kantinen stenger kl.12 pga. Hustfesten!"
+    mandag: "Pasta med kjøttsaus, Seibiff med løk, Aspargessuppe",
+    tirsdag: "Grønnsakscurry med kikerter, Klippfiskburger på grovbrød, Tom Yum Gaisuppe",
+    onsdag: "Fersk kjøtt med løksaus, Søtpotet og linsesuppe",
+    torsdag: "Lammegryte, Laksewok, Fiskesuppe",
+    fredag: "Fish and chips :fish::fries:"
   },
   galleriet: {
     mandag: "Pasta Primavera, Grønnsakssuppe",

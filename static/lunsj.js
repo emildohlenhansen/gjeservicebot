@@ -1,17 +1,17 @@
 module.exports = {
   huset: {
-    mandag: "Kremet pasta med chilimarinert svinenakke, Dampet torsk med sitronsaus, Tomatsuppe",
-    tirsdag: "Indisk linsegryte (vegetar), Sprøbakt hokifilet, Gulrotsuppe",
-    onsdag: "Svinecarré med polentapudding, Steambuns med livecekylling og asiatisk salat",
-    torsdag: "Pølse med potetmos, Laksewok, Fiskesuppe",
-    fredag: "BBQ ribbe med stekte Folva poteter fra Vestfold, bakte sherrytomater og bbq saus"
+    mandag: "Pasta med skinke, Torsk med ost og grønnsakstopping, Soppsuppe",
+    tirsdag: "Indisk curry med mais og kikerter (vegetar), Stekt rødspette, Løksuppe",
+    onsdag: "Røkt oksenakke, Dampet laks, Fiskesuppe",
+    torsdag: "Flesk og duppe, Salt torsk med baconsmør,  Blomkål og brokkolisuppe",
+    fredag: "Lasagne "
   },
   galleriet: {
-    mandag: "Chili con carne, Grønnsaksuppe",
-    tirsdag: "Stekte Kyllinglår, Rødbetesuppe",
-    onsdag: "Panerte kalkun, Kjøttsuppe",
-    torsdag: "Fiskekaker med råkost, Grønnsaksuppe",
-    fredag: "Hjemmelaget hamburger"
+    mandag: "Pølsegryte, Grønnsaksuppe",
+    tirsdag: "Stekte kyllinglår med humus, Gulrotsuppe",
+    onsdag: "Pasta med kjøttboller, Kyllingsuppe",
+    torsdag: "Sei cordon blue, Tomatsuppe",
+    fredag: "Taco"
   },
   rom: [
     'CA22ZT7TN'

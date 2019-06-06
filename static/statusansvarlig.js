@@ -9,7 +9,7 @@ module.exports = {
     ["UB9CWUCS1", "29"], // Emil
     ["UA5QWQ9BQ", "23"], // Håkon
     ["UBECSNGTA", "30"], // Mira
-    ["UA536664V", "31"] // Pål
+    ["UEXRX3QKX", "31"] // Edvard
   ],
   rom: [
     'CA22ZT7TN'

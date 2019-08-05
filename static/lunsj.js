@@ -1,10 +1,10 @@
 module.exports = {
  huset: {
-    mandag: "Lunt smørbrød med leverpostei, bacon og soppstuing",
-    tirsdag: "Sprøbakt torsk med maispuré, fylt tomat og remulade",
-    onsdag: "Kyllingvinger med pommes frites og gratinert blomkål",
-    torsdag: "Spicy wok med reker og friske grønnsaker, lunt nanbrød",
-    fredag: "Lasagne med salat"
+    mandag: "Kyllinglår med urterub, Torsk med eggesmør, Argentinsk bønne og grønnsaksuppe med brød og tilbehør",
+    tirsdag: "Aloo Gobi (Indisk potet og blomkålgryte), Klippfiskgryte, Fiskesuppe med brød og tilbehør",
+    onsdag: "Pai med skinke, Pasta med reker, Tom Yum Gai suppe med brød og tilbehør",
+    torsdag: "Wok med sesam og chili marinerte biffstrimler, Fiskeburger på grovt brød med syrlig råkost, Kylling suppe med brød og tilbehør",
+    fredag: "Kylling fajitas med salat, Dagens suppe"
   },
   galleriet: {
     mandag: "Chili Con Carne",

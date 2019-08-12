@@ -7,11 +7,11 @@ module.exports = {
     fredag: "Grillet lammekotelett med stekte småpoteter fra Vestfold og bakte beter. Dagens suppe"
   },
   galleriet: {
-    mandag: "Chili Con Carne",
-    tirsdag: "Kyllinglår med sopprisotto",
-    onsdag: "Pasta Carbonara",
-    torsdag: "Bacalao",
-    fredag: "Husets kyllingkjøttboller"
+    mandag: "Kyllinglår med pasta",
+    tirsdag: "Svinebog med rødvinsaus",
+    onsdag: "Chilli con carne",
+    torsdag: "Stekt ris med skinke og vårruller",
+    fredag: "Taco fest"
   },
   rom: [
     'CA22ZT7TN'

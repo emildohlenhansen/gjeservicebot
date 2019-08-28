@@ -8,9 +8,9 @@ module.exports = {
     ["UA52Y6GE9", "39"], // Fredrik
     ["UB9CWUCS1", "40"], // Emil
     ["UA5QWQ9BQ", "41"], // Håkon
-    ["UBECSNGTA", "42"], // Mira
+    ["UBECSNGTA", "44"], // Mira
     ["UEXRX3QKX", "43"], // Edvard
-    ["UM7MLBFC3", "44"], // Hege
+    ["UM7MLBFC3", "42"], // Hege
     ["UMELX0XAR", "45"] // Martin
   ],
   rom: [

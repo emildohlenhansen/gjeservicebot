@@ -1,17 +1,17 @@
 module.exports = {
  huset: {
-    mandag: "Stroganoffgryte, Pankopanert rødspette, Potet og purreløksuppe med tilbehør og brød",
-    tirsdag: "Boboli, Kilppfiskgryte, Brokkolisuppe med kokos, tilbehør og brød",
-    onsdag: "Flesk og duppe, Dampet torsk med hollandaisesaus, Fiskesuppe med tilbehør og brød",
-    torsdag: "Spanske kjøttboller med byggrynsrisotto og bakte grønnsaker, Pasta med laks, Meksikansk maissuppe med tilbehør og brød",
-    fredag: "Libabrød med spicy kylling/ lammekjøttdeig og salat, Dagens fisk med tilbehør, Dagens suppe med tilbehør og brød"
+    mandag: "Pasta med kjøttsaus, Dampet torsk med baconsmør, ertestuing og kokt potet, Soppsuppe",
+    tirsdag: "Grønnsakslasagne,Sprøbakt hysefilet med råkost og bulgur, Kremet rødbetssuppe",
+    onsdag: "Komle med vossakorv, kålrabbistappe og potet, Laksewok, Tomatsuppe",
+    torsdag: "Egg og bacon med tomatbønner og stekte poteter, Fiskeburger, Fiskesuppe",
+    fredag: "Hvalgryte med grønnsaker og kokt potet"
   },
   galleriet: {
-    mandag: "Kalvegryte med sopp, Gulrotsuppe med kokosmelk",
-    tirsdag: "Chilli mango svinekjøtt med ris, Blomkålsuppe",
-    onsdag: "Panert torsk, Gulasjsuppe",
-    torsdag: "Kumle med saltet kjøtt og poteter, Tandori kyllingsuppe",
-    fredag: "Burritos"
+    mandag: "Tortellini med spinat og ricotta kylling pesto saus, Purreløk og poteter suppe",
+    tirsdag: "Lammefrikasse, Søtpotet med chorizo",
+    onsdag: "Fiskekakker med råkost, Bønnesuppe",
+    torsdag: "Risotto med sopp og kylling lår, Betasuppe",
+    fredag: "Egg nudler med sitron gres biff, Masala indisk med linser"
   },
   rom: [
     'CA22ZT7TN'

@@ -1,10 +1,10 @@
 module.exports = {
  huset: {
     mandag: "Ingen meny :pensive:",
-    tirsdag: "Grønnsakslasagne,Sprøbakt hysefilet med råkost og bulgur, Kremet rødbetssuppe",
-    onsdag: "Komle med vossakorv, kålrabbistappe og potet, Laksewok, Tomatsuppe",
-    torsdag: "Egg og bacon med tomatbønner og stekte poteter, Fiskeburger, Fiskesuppe",
-    fredag: "Hvalgryte med grønnsaker og kokt potet"
+    tirsdag: "Ingen meny :pensive:",
+    onsdag: "Ingen meny :pensive:",
+    torsdag: "Ingen meny :pensive:",
+    fredag: "Ingen meny :pensive:",
   },
   galleriet: {
     mandag: "Hjortekjøtt gryte, Hvit aspargessuppe",

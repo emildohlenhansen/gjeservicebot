@@ -9,9 +9,12 @@ module.exports = {
     ["UBECSNGTA", "2904"], // Mira
     ["UA4U8PN74", "2805"], // Jon Magnus
     ["UA536664V", "0912"], // Pål
-    ["UBDAM8G48", "2705"], // Martin
+    ["UBDAM8G48", "2705"], // Martin S
     ["UA55C8AA1", "1405"], // Julij
-    ["UA4RPFW72", "1310"] // Thomas
+    ["UA4RPFW72", "1310"], // Thomas
+    ["UMELX0XAR", "1604"], // Martin W
+    ["UM7MLBFC3", "0203"], //Hege
+    ["UPB0NRYBU", "2601"] //Hamy
   ],
   rom: [
     'CD1HHGMC0'

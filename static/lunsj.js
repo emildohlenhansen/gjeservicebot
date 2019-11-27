@@ -1,17 +1,17 @@
 module.exports = {
  huset: {
-    mandag: "Pasta med kylling og friske grønnsaker, Dampet torsk med baconsmør, ertestuing og kokte poteter, Indisk linsesuppe med tilbehør og brød",
-    tirsdag: "Boboli, Sprøbakt brosme med råkost og couscous, Tomatsuppe med tilbehør og brød",
-    onsdag: "Erter, saltkjøtt og flesk med dampede poteter fra Vestfold og kokte rotgrønnsaker, Skalldyrwok,  Blomkål og brokkolisuppe med tilbehør og brød",
-    torsdag: "Asiatisk svinegryte med ris og bakte tomater, Laskelasagne med salat, Gulrotsuppe med tilbehør og brød",
-    fredag: "Tortilla med Spisestuas salsa, rømme og salat, Dagens fisk med tilbehør,  Dagens suppe med tilbehør og brød"
+    mandag: "Lapskaus med flatbrød, Klippfiskgryte,  Tom Yum Gai suppe med tilbehør og brød",
+    tirsdag: "Shepherdspai med grov potetmos, Fiskeburger på grovbrød med råkost, Fiskesuppe med tilbehør og brød",
+    onsdag: "Brennsnut, Dampet torsk med stekte gulrøtter og bulgur, Løksuppe med tilbehør og brød",
+    torsdag: "Aloo Gobi (Indisk potet og blomkålgryte), Pasta med laks, Tilbehør: Raita, 'Potet og purreløksuppe' med tilbehør og brød",
+    fredag: "Entrecote med søtpotetchips, bearnaisesaus og bakte grønnsaker, Dagens fisk med tilbehør,  Dagens suppe med tilbehør og brød"
   },
   galleriet: {
-    mandag: "Chili con polo med ris, Marokansk kjøttsuppe",
-    tirsdag: "Biff bordolaise pasta, Tex mex suppe",
-    onsdag: "FTeriyaki laks med grønt, Frikadelessuppe",
-    torsdag: "Cajun kylling med bakte poteter, Linsesuppe",
-    fredag: "Rokt grov currywurst med potet og lål salat, Brokkolisuppe"
+		mandag: "Quorn Lasagne, Pølsesuppe",
+		tirsdag: "Svinebog med kål og bønner cassoulet, Minestronesuppe",
+		onsdag: "Fiskekaker med råkost og poteter, Paprika og greskar med chilli",
+		torsdag: "Amerikansk Thanksgiving Kalkun, Fiskesuppe med chili ,kokos og sitrongress",
+		fredag: "Pasta Alfredo, Thaisuppe"
   },
   rom: [
     'CA22ZT7TN'

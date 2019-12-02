@@ -31,6 +31,6 @@ module.exports = robot => {
     /*res.reply(
       `:champagne: ${yesterday}\n:rocket: ${today}\n:boom: ${obstacles}\n`
     );*/
-    res.reply(res);
+    res.reply(JSON.stringify(res));
   });
 };

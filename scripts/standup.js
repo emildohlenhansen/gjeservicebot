@@ -27,10 +27,8 @@ module.exports = robot => {
   robot.respond(/standup (.*) (.*) (.*)/, res => {
     const [yesterday, today, obstacles] = res.match;
     console.log();
-    //*${}*\n
-    /*res.reply(
+    res.reply(
       `:champagne: ${yesterday}\n:rocket: ${today}\n:boom: ${obstacles}\n`
-    );*/
-    res.reply(JSON.stringify(res));
+    );
   });
 };

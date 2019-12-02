@@ -3,9 +3,8 @@ const admin = require("firebase-admin");
 const serviceAccount = process.env.TIMEFORING_PK;
 
 admin.initializeApp({
-  credential: admin.credential.cert(JSON.parse(serviceAccount)),
-  databaseURL: "https://timeforing-f61c1.firebaseio.com"
-}, 'timeforing');
+  credential: admin.credential.cert(JSON.parse(serviceAccount))
+});
 
 const db = admin.firestore();
 

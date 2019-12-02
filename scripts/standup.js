@@ -11,7 +11,7 @@ module.exports = robot => {
       .get()((err, res, body) => {
       const channels = JSON.parse(body);
 
-      msg.send(`${channels}`);
+      msg.send(`${body}`);
     });
   });
 };

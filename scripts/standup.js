@@ -3,7 +3,7 @@
 const baseUrl = "https://slack.com/api/";
 
 module.exports = robot => {
-  robot.respond(/cron/, msg => {
+  robot.respond(/cron/, _ => {
     robot
       .http(
         `https://slack.com/api/channels.list?token=${process.env.HUBOT_SLACK_TOKEN}&exclude_archived=1`
@@ -11,7 +11,7 @@ module.exports = robot => {
       .get()((err, res, body) => {
       const channels = JSON.parse(body);
       if (channels.ok) {
-        const members = channels.channels
+        channels.channels
           .filter(c => c.name === "gjeservicebot-gje-workshop")
           .map(c => c.members)[0]
           .forEach(id =>
@@ -26,9 +26,11 @@ module.exports = robot => {
 
   robot.respond(/standup (.*) (.*) (.*)/, res => {
     const [yesterday, today, obstacles] = res.match;
-
-    res.reply(
+    console.log();
+    //*${}*\n
+    /*res.reply(
       `:champagne: ${yesterday}\n:rocket: ${today}\n:boom: ${obstacles}\n`
-    );
+    );*/
+    res.reply(res);
   });
 };

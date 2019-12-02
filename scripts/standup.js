@@ -1,23 +1,14 @@
 //const CronJob = require("cron").CronJob;
 
-/*const firebase = require("firebase-admin");
+const admin = require("firebase-admin");
 
-require("firebase/firestore");
+const serviceAccount = process.env.STANDUP_PK;
 
-var firebaseConfig = {
-  apiKey: "AIzaSyBsHrSqz3wyLA0uoD9kz4CBTECcyII-o78",
-  authDomain: "servicebot-standup.firebaseapp.com",
-  databaseURL: "https://servicebot-standup.firebaseio.com",
-  projectId: "servicebot-standup",
-  storageBucket: "servicebot-standup.appspot.com",
-  messagingSenderId: "71766126845",
-  appId: "1:71766126845:web:703cd92be1f5e828118e94"
-};
+admin.initializeApp({
+  credential: admin.credential.cert(JSON.parse(serviceAccount))
+});
 
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-const db = firebase.firestore();
-*/
+const db = admin.firestore();
 
 module.exports = robot => {
   robot.respond(/cron/, _ => {
@@ -44,21 +35,14 @@ module.exports = robot => {
   robot.respond(/standup (.*) (.*) (.*)/, res => {
     const [yesterday, today, obstacles] = res.match;
 
-    db.collection("standup")
-      .doc(Date.now())
-      .set({
-        date: Date.now(),
-        user: res.envelope.user.id,
-        yesterday,
-        today,
-        obstacles
-      })
-      .then(function(docRef) {
-        console.log("Document written with ID: ", docRef.id);
-      })
-      .catch(function(error) {
-        console.error("Error adding document: ", error);
-      });
+    let docRef = db.collection("standup");
+    docRef.add({
+      date: Date.now(),
+      user: res.envelope.user.id,
+      yesterday,
+      today,
+      obstacles
+    });
 
     res.reply(
       `:champagne: ${yesterday}\n:rocket: ${today}\n:boom: ${obstacles}\n`

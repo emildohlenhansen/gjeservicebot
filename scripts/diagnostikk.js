@@ -9,7 +9,7 @@ module.exports = robot => {
     res.send(res.message.room);
   });
 
-  robot.respond(/ /, msg => {
+  robot.respond(/hvilke rom er du i/, msg => {
     robot
       .http(
         `https://slack.com/api/channels.list?token=${process.env.HUBOT_SLACK_TOKEN}&exclude_archived=1`

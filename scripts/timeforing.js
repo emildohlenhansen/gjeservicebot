@@ -10,8 +10,8 @@ const db = admin.firestore();
 
 module.exports = robot => {
   robot.respond(/timeforing (.*) (.*)/, res => {
-    const kode = res.match[2];
-    const timer = res.match[3];
+    const kode = res.match[1];
+    const timer = res.match[2];
 
     db.collection("timeforinger")
       .doc(res.envelope.user.id)

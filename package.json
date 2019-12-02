@@ -20,7 +20,7 @@
     "firebase-admin": "8.8.0"
   },
     "engines": {
-    "node": "7.10.1"
+    "node": "12.13.1"
   },
   "devDependencies": {
     "eslint": "3.19.0",

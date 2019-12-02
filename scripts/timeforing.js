@@ -9,22 +9,17 @@ admin.initializeApp({
 const db = admin.firestore();
 
 module.exports = robot => {
-  robot.respond(/timeforing (.*) (.*) (.*)/, res => {
-    const dato = res.match[1];
+  robot.respond(/timeforing (.*) (.*)/, res => {
     const kode = res.match[2];
     const timer = res.match[3];
 
     db.collection("timeforinger")
       .doc(res.envelope.user.id)
       .set({
-        months: []
-    })
-      .then(function(docRef) {
-        console.log("Document written with ID: ", docRef.id);
+        date: new Date().toLocaleDateString('nb-NO'),
+        hours: timer,
+        code: kode,
       })
-      .catch(function(error) {
-        console.error("Error adding document: ", error);
-      });
 
     res.reply([dato, kode, timer].join(", "));
   });

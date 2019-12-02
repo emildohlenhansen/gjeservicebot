@@ -31,7 +31,7 @@ module.exports = robot => {
         .groups.filter(group => group && group.id)
         .map(group => group.name);
 
-      msg.send(`Disse private kanalene er jeg i: ${grupper.join()} :boom:`);
+      msg.send(`Disse private kanalene er jeg i: ${grupper.join()}`);
     });
   });
 

@@ -15,6 +15,7 @@ module.exports = robot => {
 
     db.collection("timeforinger")
       .doc(res.envelope.user.id)
+      .collection(kode)
       .set({
         date: new Date().toLocaleDateString('nb-NO'),
         hours: timer,

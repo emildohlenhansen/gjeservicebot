@@ -21,7 +21,7 @@ module.exports = robot => {
         code: kode,
       })
 
-    res.reply([dato, kode, timer].join(", "));
+    res.reply(`Da fører jeg ${timer} på ${kode} :heavy_check_mark:`);
   });
 
   robot.respond(/timeforing hjelp/, res => {

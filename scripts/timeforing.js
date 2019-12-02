@@ -4,7 +4,7 @@ const serviceAccount = process.env.TIMEFORING_PK;
 
 admin.initializeApp({
   credential: admin.credential.cert(JSON.parse(serviceAccount))
-});
+}, 'timeforing');
 
 const db = admin.firestore();
 

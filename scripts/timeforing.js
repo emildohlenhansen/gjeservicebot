@@ -15,10 +15,10 @@ module.exports = robot => {
 
     db.collection("timeforinger")
       .doc(res.envelope.user.id)
-      .doc(new Date().toLocaleDateString('nb-NO'))
-      .doc(kode)
-      .set({
-        hours: timer
+      .add({
+        date: new Date().toLocaleDateString('nb-NO'),
+        hours: timer,
+        code: kode,
       })
 
     res.reply(`Da fører jeg ${timer} på ${kode} :heavy_check_mark:`);

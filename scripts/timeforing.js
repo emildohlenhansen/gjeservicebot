@@ -21,7 +21,7 @@ module.exports = robot => {
         code: kode,
       })
 
-    res.reply([dato, kode, timer].join(", "));
+    res.reply([kode, timer].join(", "));
   });
 
   robot.respond(/timeforing hjelp/, res => {

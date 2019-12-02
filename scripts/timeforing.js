@@ -2,11 +2,11 @@ const admin = require("firebase-admin");
 
 const serviceAccount = process.env.TIMEFORING_PK;
 
-const timeforing = admin.initializeApp({
+admin.initializeApp({
   credential: admin.credential.cert(JSON.parse(serviceAccount))
-}, 'timeforing');
+});
 
-const db = timeforing.firestore();
+const db = admin.firestore();
 
 module.exports = robot => {
   robot.respond(/timeforing (.*) (.*)/, res => {
@@ -15,7 +15,7 @@ module.exports = robot => {
 
     db.collection("timeforinger")
       .doc(res.envelope.user.id)
-      .add({
+      .set({
         date: new Date().toLocaleDateString('nb-NO'),
         hours: timer,
         code: kode,

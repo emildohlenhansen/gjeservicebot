@@ -12,15 +12,15 @@
     "cron": "1.1.1",
     "hubot": "3.3.2",
     "hubot-heroku-keepalive": "1.0.3",
+    "firebase-admin": "8.8.0",
     "hubot-redis-brain": "1.0.0",
     "hubot-scripts": "2.17.2",
     "hubot-slack": "4.7.1",
     "moment": "2.16.0",
-    "xml2json": "0.11.2",
-    "firebase-admin": "8.8.0"
+    "xml2json": "0.11.2"
   },
-    "engines": {
-    "node": "7.10.1"
+  "engines": {
+    "node": "10.10.0"
   },
   "devDependencies": {
     "eslint": "3.19.0",

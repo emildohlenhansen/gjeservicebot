@@ -4,9 +4,12 @@ const admin = require('firebase-admin');
 
 const serviceAccount = process.env.STANDUP_PK;
 
-admin.initializeApp({
-  credential: admin.credential.cert(JSON.parse(serviceAccount))
-});
+admin.initializeApp(
+  {
+    credential: admin.credential.cert(JSON.parse(serviceAccount))
+  },
+  'standup'
+);
 
 const db = admin.firestore();
 
@@ -45,6 +48,8 @@ module.exports = (robot) => {
         obstacles
       });
 
-    res.reply(`:champagne: ${yesterday}\n:rocket: ${today}\n:boom: ${obstacles}\n`);
+    res.reply(
+      `Standup registrert!!:white-check-mark:\n :champagne: ${yesterday}\n:rocket: ${today}\n:boom: ${obstacles}\n`
+    );
   });
 };

@@ -9,7 +9,7 @@ module.exports = robot => {
     res.send(res.message.room);
   });
 
-  robot.respond(/hvilke rom er du i/, msg => {
+  robot.respond(/ /, msg => {
     robot
       .http(
         `https://slack.com/api/channels.list?token=${process.env.HUBOT_SLACK_TOKEN}&exclude_archived=1`
@@ -31,7 +31,7 @@ module.exports = robot => {
         .groups.filter(group => group && group.id)
         .map(group => group.name);
 
-      msg.send(`Disse private kanalene er jeg i: ${grupper.join()} :boom:`);
+      msg.send(`Disse private kanalene er jeg i: ${grupper.join()}`);
     });
   });
 

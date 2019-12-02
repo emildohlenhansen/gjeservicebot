@@ -20,7 +20,6 @@ module.exports = robot => {
         hours: timer,
         code: kode,
       })
-
     res.reply(`Da fører jeg ${timer} på ${kode} :heavy_check_mark:`);
   });
 

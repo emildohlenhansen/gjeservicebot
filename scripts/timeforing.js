@@ -1,11 +1,12 @@
-const firestore = require("@google-cloud/firestore");
+const admin = require("firebase-admin");
 
 const serviceAccount = process.env.TIMEFORING_PK;
 
-const db  = new firestore({
-  keyFilename: JSON.parse(serviceAccount),
-  projectId: "timeforing-f61c1"
+admin.initializeApp({
+  credential: admin.credential.cert(JSON.parse(serviceAccount))
 });
+
+const db = admin.firestore();
 
 module.exports = robot => {
   robot.respond(/timeforing (.*) (.*) (.*)/, res => {

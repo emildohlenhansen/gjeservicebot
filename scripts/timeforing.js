@@ -2,11 +2,11 @@ const admin = require("firebase-admin");
 
 const serviceAccount = process.env.TIMEFORING_PK;
 
-admin.initializeApp({
+const timeforing = admin.initializeApp({
   credential: admin.credential.cert(JSON.parse(serviceAccount))
-});
+}, 'timeforing');
 
-const db = admin.firestore();
+const db = timeforing.firestore();
 
 module.exports = robot => {
   robot.respond(/timeforing (.*) (.*)/, res => {

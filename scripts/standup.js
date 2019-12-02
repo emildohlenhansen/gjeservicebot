@@ -1,17 +1,34 @@
-const CronJob = require("cron").CronJob;
+//const CronJob = require("cron").CronJob;
 
 const baseUrl = "https://slack.com/api/";
 
 module.exports = robot => {
-  robot.respond(/standup/, msg => {
+  robot.respond(/cron/, msg => {
     robot
       .http(
         `https://slack.com/api/channels.list?token=${process.env.HUBOT_SLACK_TOKEN}&exclude_archived=1`
       )
       .get()((err, res, body) => {
       const channels = JSON.parse(body);
-
-      msg.send(`${body}`);
+      if (channels.ok) {
+        const members = channels.channels
+          .filter(c => c.name === "gjeservicebot-gje-workshop")
+          .map(c => c.members)[0]
+          .forEach(id =>
+            robot.messageRoom(
+              id,
+              'Reminder: Standup! :loudspeaker:\n\n \n\nFormat: _standup_ "hva du gjorde i går" "hva du skal gjøre i dag" "hvilke hindringer du har"'
+            )
+          );
+      }
     });
+  });
+
+  robot.respond(/standup (.*) (.*) (.*)/, res => {
+    const [yesterday, today, obstacles] = res.match;
+
+    res.reply(
+      `:champagne: ${yesterday}\n:rocket: ${today}\n:boom: ${obstacles}\n`
+    );
   });
 };

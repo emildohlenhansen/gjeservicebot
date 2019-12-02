@@ -1,6 +1,6 @@
 //const CronJob = require("cron").CronJob;
 
-const firebase = require("firebase/app");
+/*const firebase = require("firebase-admin");
 
 require("firebase/firestore");
 
@@ -17,6 +17,7 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const db = firebase.firestore();
+*/
 
 module.exports = robot => {
   robot.respond(/cron/, _ => {

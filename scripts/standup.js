@@ -33,9 +33,9 @@ module.exports = (robot) => {
   });
 
   robot.respond(/standup (.*) (.*) (.*)/, (res) => {
-    const [yesterday, today, obstacles] = res.match;
+    const [, yesterday, today, obstacles] = res.match;
 
-    db.collection('users')
+    db.collection('standup')
       .doc(res.envelope.user.id)
       .collection('standups')
       .add({

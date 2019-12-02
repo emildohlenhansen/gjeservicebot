@@ -20,8 +20,7 @@ module.exports = robot => {
         hours: timer,
         code: kode,
       })
-
-    res.reply([kode, timer].join(", "));
+    res.reply(`Da fører jeg ${timer} på ${kode} :heavy_check_mark:`);
   });
 
   robot.respond(/timeforing hjelp/, res => {

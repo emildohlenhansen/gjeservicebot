@@ -3,7 +3,7 @@
 const baseUrl = "https://slack.com/api/";
 
 module.exports = robot => {
-  robot.respond(/standup/, msg => {
+  robot.respond(/cron/, msg => {
     robot
       .http(
         `https://slack.com/api/channels.list?token=${process.env.HUBOT_SLACK_TOKEN}&exclude_archived=1`
@@ -17,10 +17,18 @@ module.exports = robot => {
           .forEach(id =>
             robot.messageRoom(
               id,
-              "Reminder: Standup! :loudspeaker:\n\n:champagne: Hva endte du med å gjøre i går?\n:rocket: Hva er planen å gjøre i dag?\n:boom: Hvilke hindringer har du for å få gjort det du skal?\n\nKjør tråd."
+              'Reminder: Standup! :loudspeaker:\n\n \n\nFormat: _standup_ "hva du gjorde i går" "hva du skal gjøre i dag" "hvilke hindringer du har"'
             )
           );
       }
     });
+  });
+
+  robot.respond(/standup (.*) (.*) (.*)/, res => {
+    const [yesterday, today, obstacles] = res.match;
+
+    res.reply(
+      `:champagne: ${yesterday}\n:rocket: ${today}\n:boom: ${obstacles}\n`
+    );
   });
 };

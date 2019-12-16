@@ -1,13 +1,13 @@
 module.exports = {
  huset: {
-    mandag: "Kyllingwok, Torsk med topping, Aspargessuppe med tilbehør og brød",
-    tirsdag: "Jambalaya, Klippfiskgryte,  Meksikansk tomatsuppe med tilbehør og brød",
-    onsdag: "Hvalgryte med potetmos og grønnsaker, Pasta med fisk og friske grønnsaker, Potet og purreløksuppe med tilbehør og brød",
-    torsdag: "Indisk curry med mais, kikerter og pitabrød, salat og dressing. Dagens fisk med tilbehør,  Dagens suppe med tilbehør og brød",
-    fredag: "Juletallerken med tilbehør,  Fiskesuppe med tilbehør og brød"
+    mandag: "Fish & Chips med remulade, Kremet grønnsakssuppe",
+    tirsdag: "Pasta med bacon, Tom Yum Gai",
+    onsdag: "Brennsnut, Laksewok med stekte grønnsaker, Fiskesuppe",
+    torsdag: "Gulasjgryte, Torsk med smeltet smør og bacon, Løksuppe",
+    fredag: "Risgrøt med saft, Dagens suppe"
   },
   galleriet: {
-		mandag: "Ungarsk lesco med potetpannekaker, Tomat og basillikum Suppe",
+		mandag: "Orket ikke oppdatere disse",
 		tirsdag: "Kylling Chop suey med ris, Pepperrotsuppe",
 		onsdag: "Tandoori Ørret, Kyllingsuppe",
 		torsdag: "Juletallerken, Kremetsoppsuppe" ,

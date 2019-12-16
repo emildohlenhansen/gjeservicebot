@@ -7,11 +7,11 @@ module.exports = {
     fredag: "Risgrøt med saft, Dagens suppe"
   },
   galleriet: {
-		mandag: "Orket ikke oppdatere disse",
-		tirsdag: "Kylling Chop suey med ris, Pepperrotsuppe",
-		onsdag: "Tandoori Ørret, Kyllingsuppe",
-		torsdag: "Juletallerken, Kremetsoppsuppe" ,
-		fredag: "Kylling Quesadillas, Mais og chillisuppe"
+		mandag: "Feuillete Florentine med ris og salat, Kjøtt og bønnersuppe",
+		tirsdag: "Kimchi krydret svinekjøtt med nudler, Fiskesuppe",
+		onsdag: "Fisk og chips, Gulaschsuppe",
+		torsdag: "Tagliatelle med cajun kylling saus, Tacosuppe" ,
+		fredag: "Fredag’s Pizza, Thaisuppe"
   },
   rom: [
     'CA22ZT7TN'

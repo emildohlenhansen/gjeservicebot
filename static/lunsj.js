@@ -1,10 +1,10 @@
 module.exports = {
  huset: {
-    mandag: "Pasta med skinke og grønnsaker, Dampet torsk med eggesmør, ertestuing og kokte poteter, Indisk linsesuppe",
-    tirsdag: "Hønsefrikassè med kokte poteter og friske grønnsaker, Fiskeburger på grovbrød med råkost, Fiskesuppe",
-    onsdag: "Kikerter Tikka Masala med indisk ris, Klippfiskgryte, Spinatsuppe",
-    torsdag: "Jambalaya, Kryddersild med kokte poteter og rotmos, Blomkål og brokkolisuppe",
-    fredag: "Lasagne"
+    mandag: "Grillet kyllinglår, Torsk med topping, Kyllingsuppe",
+    tirsdag: "Medisterpølse med rødkål, poteter og tyttebær, Dampet kveite med smørdampet kål og poteter, Søtpotetsuppe",
+    onsdag: "Gresskargryte med kokos og chili, Kremet grønnsakssuppe",
+    torsdag: "Flesk og duppe, Fiskewok, Tomatsuppe ",
+    fredag: "Villsvin ytrefilet med soppstuing, rosenkål og stekte poteter fra Vestfold"
   },
   galleriet: {
 		mandag: "Ingen meny :man-shrugging:",
